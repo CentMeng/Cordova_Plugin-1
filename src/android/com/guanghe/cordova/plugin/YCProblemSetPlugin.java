@@ -277,33 +277,33 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"blank\": \"1\",\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"_id\": \"563866ac38e9d0bf55bc9e95\",\n" +
-            "        \"body\": \"答案是1\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-5x+$____$= (x-$____$)^2$\",\n" +
             "        \"type\": \"blank\",\n" +
             "        \"level\": 1,\n" +
             "        \"choices\": []\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ad38e9d0bf55bc9e96\",\n" +
-            "        \"body\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
+            "        \"body\": \"对方程$x^2-x-{3 \\over 4}=0$配方结果正确的是（ ）<img src='http://7sbko6.com2.z0.glb.qiniucdn.com/HS-LX4-J1-1.png?imageMogr2/thumbnail/300x300'>\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 1,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$A$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 2}) ^2={1 \\over 2}$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$B$\",\n" +
+            "            \"body\": \"$ (x-1) ^2={1 \\over 4}$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$C$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 2}) ^2=1$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$D$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 2}) ^4=1$\",\n" +
             "            \"correct\": false\n" +
             "          }\n" +
             "        ]\n" +
@@ -312,106 +312,82 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "    [\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
+            "        \"body\": \"对方程 $4x^2-x-9=0$配方结果正确的是（  ）\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$A$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 4}) ^2={37 \\over 16}$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$B$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 8}) ^2={143 \\over 64}$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$C$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 8}) ^2={145 \\over 64}$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$D$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 8}) ^2={142 \\over 62}$\",\n" +
             "            \"correct\": false\n" +
             "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2+mx+$____$= (x+$____$)  ^2$\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$A$\",\n" +
+            "            \"body\": \"$m^2 \\over 2$&nbsp;;&nbsp;$m \\over 2$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$B$\",\n" +
+            "            \"body\": \"$m^2 \\over 4$&nbsp;;&nbsp;$m \\over 2$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$C$\",\n" +
-            "            \"correct\": false\n" +
-            "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$D$\",\n" +
-            "            \"correct\": false\n" +
-            "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-px+$____$= (x-$____$)^2$\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$A$\",\n" +
+            "            \"body\": \"$p^2 \\over 4$&nbsp;;&nbsp;$p \\over 2$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$B$\",\n" +
+            "            \"body\": \"$p^2 \\over 2$&nbsp;;&nbsp;$p \\over 2$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$C$\",\n" +
-            "            \"correct\": false\n" +
-            "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$D$\",\n" +
-            "            \"correct\": false\n" +
-            "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{1 \\over 5 }x+$____$= (x-$____$)^2$\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$A$\",\n" +
+            "            \"body\": \"$1 \\over 100$&nbsp;;&nbsp;$1 \\over 10$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$B$\",\n" +
+            "            \"body\": \"$1 \\over 25$&nbsp;;&nbsp;$1 \\over 5$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$C$\",\n" +
-            "            \"correct\": false\n" +
-            "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$D$\",\n" +
-            "            \"correct\": false\n" +
-            "          }\n" +
             "        ]\n" +
             "      }\n" +
             "    ],\n" +
@@ -421,35 +397,27 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"blank\": \"2012\",\n" +
             "        \"explain\": \"填空题2111\",\n" +
             "        \"_id\": \"563866ac38e9d1bf55bc9e95\",\n" +
-            "        \"body\": \"答案是2012\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{5 \\over 4} x+$____$= (x-$____$)  ^2$\",\n" +
             "        \"type\": \"blank\",\n" +
             "        \"level\": 3,\n" +
             "        \"choices\": []\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ad38e9d0bf55bc9e963213123\",\n" +
-            "        \"body\": \"床前明月光～～\",\n" +
+            "        \"body\": \"狗蛋终于要把这道题做完了，来帮狗蛋选出正确的答案吧！<hr /> <img src='http://7sbko6.com2.z0.glb.qiniucdn.com/J1-4.png?imageMogr2/thumbnail/300x300'>\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 3,\n" +
             "        \"explain\": \"大大叔大叔大叔大叔大叔｀\",\n" +
             "        \"prompt\": \"dasdasdasdasdasdasdas\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$A$\",\n" +
+            "            \"body\": \"$x_1=3$，$x_2=5$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$B$\",\n" +
+            "            \"body\": \"$ x_1=-3$，$x_2=-5$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$C$\",\n" +
-            "            \"correct\": false\n" +
-            "          },\n" +
-            "          {\n" +
-            "            \"body\": \"$D$\",\n" +
-            "            \"correct\": false\n" +
-            "          }\n" +
             "        ]\n" +
             "      }\n" +
             "    ]\n" +
