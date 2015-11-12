@@ -471,7 +471,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t\"problemSetId\": \"7636d00c9160089a\",\n" +
             "\t\"type\": \"single\",\n" +
             "\t\"choices\": [{\n" +
-            "\t\t\"body\": \"$25 \\\\over 4$&nbsp;;&nbsp;$5 \\\\over 2$\",\n" +
+            "\t\t\"body\": \"$25 \\\over 4$&nbsp;;&nbsp;$5 \\\over 2$\",\n" +
             "\t\t\"correct\": true\n" +
             "\t}, {\n" +
             "\t\t\"body\": \"$25$&nbsp;;&nbsp;$5$\",\n" +
@@ -479,7 +479,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t}],\n" +
             "\t\"body\": \"帮小锤在横线上填上正确的数： $x^2-5x+$____$= (x-$____$)^2$\",\n" +
             "\t\"prompt\": null,\n" +
-            "\t\"explain\": \"由$a^2-2ab+b^2= (a-b) ^2$ <br />且$5x=2 \\\\\\\\cdot x \\\\\\\\cdot  {5 \\\\\\\\over 2}$，<br />所以$ x^2-5x+{25 \\\\\\\\over 4}= (x-{5 \\\\\\\over 2}) ^2$\",\n" +
+            "\t\"explain\": \"由$a^2-2ab+b^2= (a-b) ^2$ <br />且$5x=2 \\\\\\\\cdot x \\\\\\\\cdot  {5 \\\\\\\over 2}$，<br />所以$ x^2-5x+{25 \\\\\\\over 4}= (x-{5 \\\\\\\over 2}) ^2$\",\n" +
             "\t\"blank\": null,\n" +
             "\t\"id\": \"c6f7c2685bbf1854\"\n" +
             "}]";
