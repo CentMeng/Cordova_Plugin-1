@@ -351,7 +351,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "          {\n" +
             "            \"body\": \"$m^2 \\over 4$&nbsp;;&nbsp;$m \\over 2$\",\n" +
             "            \"correct\": false\n" +
-            "          },\n" +
+            "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
@@ -369,7 +369,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "          {\n" +
             "            \"body\": \"$p^2 \\over 2$&nbsp;;&nbsp;$p \\over 2$\",\n" +
             "            \"correct\": false\n" +
-            "          },\n" +
+            "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
@@ -387,7 +387,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "          {\n" +
             "            \"body\": \"$1 \\over 25$&nbsp;;&nbsp;$1 \\over 5$\",\n" +
             "            \"correct\": false\n" +
-            "          },\n" +
+            "          }\n" +
             "        ]\n" +
             "      }\n" +
             "    ],\n" +
@@ -417,7 +417,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "          {\n" +
             "            \"body\": \"$ x_1=-3$，$x_2=-5$\",\n" +
             "            \"correct\": false\n" +
-            "          },\n" +
+            "          }\n" +
             "        ]\n" +
             "      }\n" +
             "    ]\n" +
