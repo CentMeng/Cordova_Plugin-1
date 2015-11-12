@@ -284,26 +284,26 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ad38e9d0bf55bc9e96\",\n" +
-            "        \"body\": \"对方程$x^2-x-{3 \over 4}=0$配方结果正确的是（ ）<img src='http://7sbko6.com2.z0.glb.qiniucdn.com/HS-LX4-J1-1.png?imageMogr2/thumbnail/300x300'>\",\n" +
+            "        \"body\": \"对方程$x^2-x-{3 \\over 4}=0$配方结果正确的是（ ）<img src='http://7sbko6.com2.z0.glb.qiniucdn.com/HS-LX4-J1-1.png?imageMogr2/thumbnail/300x300'>\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 1,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 2}) ^2={1 \over 2}$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 2}) ^2={1 \\over 2}$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-1) ^2={1 \over 4}$\",\n" +
+            "            \"body\": \"$ (x-1) ^2={1 \\over 4}$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 2}) ^2=1$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 2}) ^2=1$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 2}) ^4=1$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 2}) ^4=1$\",\n" +
             "            \"correct\": false\n" +
             "          }\n" +
             "        ]\n" +
@@ -319,19 +319,19 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 4}) ^2={37 \over 16}$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 4}) ^2={37 \\over 16}$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 8}) ^2={143 \over 64}$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 8}) ^2={143 \\over 64}$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 8}) ^2={145 \over 64}$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 8}) ^2={145 \\over 64}$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 8}) ^2={142 \over 62}$\",\n" +
+            "            \"body\": \"$ (x-{1 \\over 8}) ^2={142 \\over 62}$\",\n" +
             "            \"correct\": false\n" +
             "          }\n" +
             "        ]\n" +
@@ -345,11 +345,11 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$m^2 \over 2$&nbsp;;&nbsp;$m \over 2$\",\n" +
+            "            \"body\": \"$m^2 \\over 2$&nbsp;;&nbsp;$m \\over 2$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$m^2 \over 4$&nbsp;;&nbsp;$m \over 2$\",\n" +
+            "            \"body\": \"$m^2 \\over 4$&nbsp;;&nbsp;$m \\over 2$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "        ]\n" +
@@ -363,29 +363,29 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$p^2 \over 4$&nbsp;;&nbsp;$p \over 2$\",\n" +
+            "            \"body\": \"$p^2 \\over 4$&nbsp;;&nbsp;$p \\over 2$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$p^2 \over 2$&nbsp;;&nbsp;$p \over 2$\",\n" +
+            "            \"body\": \"$p^2 \\over 2$&nbsp;;&nbsp;$p \\over 2$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{1 \over 5 }x+$____$= (x-$____$)^2$\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{1 \\over 5 }x+$____$= (x-$____$)^2$\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$1 \over 100$&nbsp;;&nbsp;$1 \over 10$\",\n" +
+            "            \"body\": \"$1 \\over 100$&nbsp;;&nbsp;$1 \\over 10$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$1 \over 25$&nbsp;;&nbsp;$1 \over 5$\",\n" +
+            "            \"body\": \"$1 \\over 25$&nbsp;;&nbsp;$1 \\over 5$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "        ]\n" +
@@ -397,7 +397,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"blank\": \"2012\",\n" +
             "        \"explain\": \"填空题2111\",\n" +
             "        \"_id\": \"563866ac38e9d1bf55bc9e95\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{5 \over 4} x+$____$= (x-$____$)  ^2$\",\n" +
+            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{5 \\over 4} x+$____$= (x-$____$)  ^2$\",\n" +
             "        \"type\": \"blank\",\n" +
             "        \"level\": 3,\n" +
             "        \"choices\": []\n" +
@@ -471,7 +471,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t\"problemSetId\": \"7636d00c9160089a\",\n" +
             "\t\"type\": \"single\",\n" +
             "\t\"choices\": [{\n" +
-            "\t\t\"body\": \"$25 \\\over 4$&nbsp;;&nbsp;$5 \\\over 2$\",\n" +
+            "\t\t\"body\": \"$25 \\\\over 4$&nbsp;;&nbsp;$5 \\\\over 2$\",\n" +
             "\t\t\"correct\": true\n" +
             "\t}, {\n" +
             "\t\t\"body\": \"$25$&nbsp;;&nbsp;$5$\",\n" +
@@ -479,7 +479,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t}],\n" +
             "\t\"body\": \"帮小锤在横线上填上正确的数： $x^2-5x+$____$= (x-$____$)^2$\",\n" +
             "\t\"prompt\": null,\n" +
-            "\t\"explain\": \"由$a^2-2ab+b^2= (a-b) ^2$ <br />且$5x=2 \\\\\\\\cdot x \\\\\\\\cdot  {5 \\\\\\\over 2}$，<br />所以$ x^2-5x+{25 \\\\\\\over 4}= (x-{5 \\\\\\\over 2}) ^2$\",\n" +
+            "\t\"explain\": \"由$a^2-2ab+b^2= (a-b) ^2$ <br />且$5x=2 \\\\\\\\cdot x \\\\\\\\cdot  {5 \\\\\\\\over 2}$，<br />所以$ x^2-5x+{25 \\\\\\\\over 4}= (x-{5 \\\\\\\\over 2}) ^2$\",\n" +
             "\t\"blank\": null,\n" +
             "\t\"id\": \"c6f7c2685bbf1854\"\n" +
             "}]";
