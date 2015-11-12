@@ -404,7 +404,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ad38e9d0bf55bc9e963213123\",\n" +
-            "        \"body\": \"狗蛋终于要把这道题做完了，来帮狗蛋选出正确的答案吧！<hr /> \",\n" +
+            "        \"body\": \"狗蛋终于要把这道题做完了，来帮狗蛋选出正确的答案吧！<hr /> <img src='http://7sbko6.com2.z0.glb.qiniucdn.com/HS-LX4-J1-2.png?imageMogr2/thumbnail/300x300'> \",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 3,\n" +
             "        \"explain\": \"大大叔大叔大叔大叔大叔｀\",\n" +
