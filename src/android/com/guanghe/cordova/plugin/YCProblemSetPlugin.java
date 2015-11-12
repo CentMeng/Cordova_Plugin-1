@@ -43,8 +43,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
      * 题目类型
      */
     private String type = "p";
-    private boolean isChallenge = false;
-    private int mSetIndex;
+
 
     /**
      * 维护做题状态
@@ -54,8 +53,9 @@ public class YCProblemSetPlugin extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
 //        String argSet = cordova.getActivity().getIntent().getStringExtra(ProblemDoingActivity.ARG_PROBLEM_SET);
-//        isChallenge = cordova.getActivity().getIntent().getBooleanExtra(ProblemDoingActivity.ARG_IS_CHALLENGE, false);
-//        mSetIndex = cordova.getActivity().getIntent().getIntExtra(ProblemDoingActivity.ARG_PROBLEM_SET_INDEX, 0);
+//        boolean isChallenge = cordova.getActivity().getIntent().getBooleanExtra(ProblemDoingActivity.ARG_IS_CHALLENGE, false);
+//        mProgress = cordova.getActivity().getIntent().getIntExtra(ProblemDoingActivity.ARG_CURRENT_PROGRESS, 0);
+//        mTotal = cordova.getActivity().getIntent().getIntExtra(ProblemDoingActivity.ARG_TOTAL_PROGRESS, 0);
 //        if (isChallenge) {
 //            type = "c";
 //        } else {
@@ -125,48 +125,27 @@ public class YCProblemSetPlugin extends CordovaPlugin {
                 boolean isPass = args.getBoolean(0);
                 if (isPass) {
                     Toast.makeText(cordova.getActivity().getBaseContext(), "测试通过了!!!!", Toast.LENGTH_LONG).show();
-//                    sumbmitPractice(isPass);
-
+//                    Intent intent = new Intent(cordova.getActivity(), ProblemEndActivity.class);
+//                    cordova.getActivity().startActivity(intent);
+//                    cordova.getActivity().finish();
                 } else {
                     String setId = args.getString(1);
                     if (TextUtils.isEmpty(setId) || TextUtils.equals("null", setId)) {
                         Toast.makeText(cordova.getActivity().getBaseContext(), "专辑失败", Toast.LENGTH_LONG).show();
-//                        sumbmitPractice(isPass);
 
                     } else {
                         Toast.makeText(cordova.getActivity().getBaseContext(), "挑战失败:失败专辑=" + setId, Toast.LENGTH_LONG).show();
 
                     }
+//                    Intent intent = new Intent(cordova.getActivity(), ProblemEndActivity.class);
+//                    cordova.getActivity().startActivity(intent);
+//                    cordova.getActivity().finish();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
     }
-
-//    private void sumbmitPractice(boolean pass){
-//        Intent intent = new Intent(cordova.getActivity(), ProblemEndActivity.class);
-//        intent.putExtra(ProblemEndActivity.ARG_IS_CHALLENGE, isChallenge);
-//        intent.putExtra(ProblemEndActivity.ARG_PROBLEM_SET_INDEX, mSetIndex);
-//        intent.putExtra(ProblemEndActivity.ARG_IS_PASS, pass);
-//        intent.putExtra(ProblemEndActivity.ARG_PROBLEM_SET, mPracticeSetJO.toString());
-//        cordova.getActivity().startActivity(intent);
-//        cordova.getActivity().finish();
-//    }
-//
-//    private void sumbmitChallenge(boolean pass,String failedSet){
-//        Intent intent = new Intent(cordova.getActivity(), ProblemEndActivity.class);
-//        intent.putExtra(ProblemEndActivity.ARG_IS_CHALLENGE, isChallenge);
-////        intent.putExtra(ProblemEndActivity.ARG_PROBLEM_SET_INDEX, mSetIndex);
-//        intent.putExtra(ProblemEndActivity.ARG_IS_PASS, pass);
-//        intent.putExtra(ProblemEndActivity.ARG_PROBLEM_SET, mChallengeSetJA.toString());
-//        if (!TextUtils.isEmpty(failedSet)) {
-//            intent.putExtra(ProblemEndActivity.ARG_FAILED_SET_ID, failedSet);
-//        }
-//
-//        cordova.getActivity().startActivity(intent);
-//        cordova.getActivity().finish();
-//    }
 
     /**
      * @param callbackContext
@@ -277,33 +256,33 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"blank\": \"1\",\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"_id\": \"563866ac38e9d0bf55bc9e95\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-5x+$____$= (x-$____$)^2$\",\n" +
+            "        \"body\": \"答案是1\",\n" +
             "        \"type\": \"blank\",\n" +
             "        \"level\": 1,\n" +
             "        \"choices\": []\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ad38e9d0bf55bc9e96\",\n" +
-            "        \"body\": \"对方程$x^2-x-{3 \over 4}=0$配方结果正确的是（ ）<img src='http://7sbko6.com2.z0.glb.qiniucdn.com/HS-LX4-J1-1.png?imageMogr2/thumbnail/300x300'>\",\n" +
+            "        \"body\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 1,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 2}) ^2={1 \over 2}$\",\n" +
+            "            \"body\": \"$A$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-1) ^2={1 \over 4}$\",\n" +
+            "            \"body\": \"$B$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 2}) ^2=1$\",\n" +
+            "            \"body\": \"$C$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 2}) ^4=1$\",\n" +
+            "            \"body\": \"$D$\",\n" +
             "            \"correct\": false\n" +
             "          }\n" +
             "        ]\n" +
@@ -312,82 +291,106 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "    [\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"对方程 $4x^2-x-9=0$配方结果正确的是（  ）\",\n" +
+            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 4}) ^2={37 \over 16}$\",\n" +
+            "            \"body\": \"$A$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 8}) ^2={143 \over 64}$\",\n" +
+            "            \"body\": \"$B$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 8}) ^2={145 \over 64}$\",\n" +
+            "            \"body\": \"$C$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ (x-{1 \over 8}) ^2={142 \over 62}$\",\n" +
+            "            \"body\": \"$D$\",\n" +
             "            \"correct\": false\n" +
             "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2+mx+$____$= (x+$____$)  ^2$\",\n" +
+            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$m^2 \over 2$&nbsp;;&nbsp;$m \over 2$\",\n" +
+            "            \"body\": \"$A$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$m^2 \over 4$&nbsp;;&nbsp;$m \over 2$\",\n" +
+            "            \"body\": \"$B$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$C$\",\n" +
+            "            \"correct\": false\n" +
+            "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$D$\",\n" +
+            "            \"correct\": false\n" +
+            "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-px+$____$= (x-$____$)^2$\",\n" +
+            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$p^2 \over 4$&nbsp;;&nbsp;$p \over 2$\",\n" +
+            "            \"body\": \"$A$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$p^2 \over 2$&nbsp;;&nbsp;$p \over 2$\",\n" +
+            "            \"body\": \"$B$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$C$\",\n" +
+            "            \"correct\": false\n" +
+            "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$D$\",\n" +
+            "            \"correct\": false\n" +
+            "          }\n" +
             "        ]\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ab38e9d0bf55bc9e94\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{1 \over 5 }x+$____$= (x-$____$)^2$\",\n" +
+            "        \"body\": \"阿斯蒂芬的萨芬\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 2,\n" +
             "        \"explain\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"prompt\": \"负数可以表示一个相反意义的量。比如说，桑尼姐增肥$5kg$用$+5$表示，那么$-2$表示\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$1 \over 100$&nbsp;;&nbsp;$1 \over 10$\",\n" +
+            "            \"body\": \"$A$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$1 \over 25$&nbsp;;&nbsp;$1 \over 5$\",\n" +
+            "            \"body\": \"$B$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$C$\",\n" +
+            "            \"correct\": false\n" +
+            "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$D$\",\n" +
+            "            \"correct\": false\n" +
+            "          }\n" +
             "        ]\n" +
             "      }\n" +
             "    ],\n" +
@@ -397,27 +400,35 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "        \"blank\": \"2012\",\n" +
             "        \"explain\": \"填空题2111\",\n" +
             "        \"_id\": \"563866ac38e9d1bf55bc9e95\",\n" +
-            "        \"body\": \"帮小锤在横线上填上正确的数： $x^2-{5 \over 4} x+$____$= (x-$____$)  ^2$\",\n" +
+            "        \"body\": \"答案是2012\",\n" +
             "        \"type\": \"blank\",\n" +
             "        \"level\": 3,\n" +
             "        \"choices\": []\n" +
             "      },\n" +
             "      {\n" +
             "        \"_id\": \"563866ad38e9d0bf55bc9e963213123\",\n" +
-            "        \"body\": \"狗蛋终于要把这道题做完了，来帮狗蛋选出正确的答案吧！<hr /> <img src='http://7sbko6.com2.z0.glb.qiniucdn.com/J1-4.png?imageMogr2/thumbnail/300x300'>\",\n" +
+            "        \"body\": \"床前明月光～～\",\n" +
             "        \"type\": \"single\",\n" +
             "        \"level\": 3,\n" +
             "        \"explain\": \"大大叔大叔大叔大叔大叔｀\",\n" +
             "        \"prompt\": \"dasdasdasdasdasdasdas\",\n" +
             "        \"choices\": [\n" +
             "          {\n" +
-            "            \"body\": \"$x_1=3$，$x_2=5$\",\n" +
+            "            \"body\": \"$A$\",\n" +
             "            \"correct\": true\n" +
             "          },\n" +
             "          {\n" +
-            "            \"body\": \"$ x_1=-3$，$x_2=-5$\",\n" +
+            "            \"body\": \"$B$\",\n" +
             "            \"correct\": false\n" +
             "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$C$\",\n" +
+            "            \"correct\": false\n" +
+            "          },\n" +
+            "          {\n" +
+            "            \"body\": \"$D$\",\n" +
+            "            \"correct\": false\n" +
+            "          }\n" +
             "        ]\n" +
             "      }\n" +
             "    ]\n" +
@@ -425,7 +436,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "}";
 
     private String challengeSetMock = "[{\n" +
-            "\t\"problemSetId\": \"9d8440cf2f411804\",\n" +
+            "\t\"problemSet\": \"9d8440cf2f411804\",\n" +
             "\t\"type\": \"single\",\n" +
             "\t\"body\": \"帮小锤在横线上填上正确的数： $x^2-6x+$____$=(x-$____$)^2$\",\n" +
             "\t\"choices\": [{\n" +
@@ -438,7 +449,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t\"explain\": \"由$a^2-2ab+b^2=(a-b)^2$ <br />且$6x=2 \\\\\\\\cdot x \\\\\\\\cdot 3$，<br />所以$ x^2-6x+9= (x-3) ^2$。 \",\n" +
             "\t\"id\": \"251717a8a2619840\"\n" +
             "}, {\n" +
-            "\t\"problemSetId\": \"19b20098859caadb\",\n" +
+            "\t\"problemSet\": \"19b20098859caadb\",\n" +
             "\t\"type\": \"single\",\n" +
             "\t\"choices\": [{\n" +
             "\t\t\"body\": \"$36$&nbsp;;&nbsp;$6$\",\n" +
@@ -453,7 +464,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t\"blank\": null,\n" +
             "\t\"id\": \"cd650a55bb633826\"\n" +
             "}, {\n" +
-            "\t\"problemSetId\": \"c57f43c6c2a1b844\",\n" +
+            "\t\"problemSet\": \"c57f43c6c2a1b844\",\n" +
             "\t\"type\": \"single\",\n" +
             "\t\"choices\": [{\n" +
             "\t\t\"body\": \"$4$&nbsp;;&nbsp;$2$\",\n" +
@@ -468,7 +479,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t\"blank\": null,\n" +
             "\t\"id\": \"ee5bb2fc9fff3896\"\n" +
             "}, {\n" +
-            "\t\"problemSetId\": \"7636d00c9160089a\",\n" +
+            "\t\"problemSet\": \"7636d00c9160089a\",\n" +
             "\t\"type\": \"single\",\n" +
             "\t\"choices\": [{\n" +
             "\t\t\"body\": \"$25 \\\\over 4$&nbsp;;&nbsp;$5 \\\\over 2$\",\n" +
@@ -479,7 +490,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
             "\t}],\n" +
             "\t\"body\": \"帮小锤在横线上填上正确的数： $x^2-5x+$____$= (x-$____$)^2$\",\n" +
             "\t\"prompt\": null,\n" +
-            "\t\"explain\": \"由$a^2-2ab+b^2= (a-b) ^2$ <br />且$5x=2 \\\\\\\\cdot x \\\\\\\\cdot  {5 \\\\\\\\over 2}$，<br />所以$ x^2-5x+{25 \\\\\\\\over 4}= (x-{5 \\\\\\\over 2}) ^2$\",\n" +
+            "\t\"explain\": \"由$a^2-2ab+b^2= (a-b) ^2$ <br />且$5x=2 \\\\\\\\cdot x \\\\\\\\cdot  {5 \\\\\\\\over 2}$，<br />所以$ x^2-5x+{25 \\\\\\\\over 4}= (x-{5 \\\\\\\\over 2}) ^2$\",\n" +
             "\t\"blank\": null,\n" +
             "\t\"id\": \"c6f7c2685bbf1854\"\n" +
             "}]";
