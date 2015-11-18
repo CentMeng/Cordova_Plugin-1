@@ -42,7 +42,7 @@ public class YCProblemSetPlugin extends CordovaPlugin {
     /**
      * 题目类型
      */
-    private String type = "c";
+    private String type = "p";
     private boolean isChallenge = false;
     private int mSetIndex;
 
